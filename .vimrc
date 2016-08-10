@@ -163,7 +163,8 @@ let g:ctrlp_working_path_mode = 'ra'
 let g:vim_markdown_folding_disabled=1
 let g:vim_markdown_no_default_key_mappings=1
 
-
+"php-cs-fixer
+map <F3> :!php-cs-fixer fix % --level=psr2<CR><CR>
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -185,7 +186,6 @@ Bundle 'ervandew/supertab'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'spiiph/vim-space'
 Bundle 'yonchu/accelerated-smooth-scroll'
-Bundle 'stephpy/vim-php-cs-fixer'
 "Bundle 'vim-scripts/qiushibaike'
 "Bundle 'vim-scripts/YankRing.vim'
 Plugin 'godlygeek/tabular'
