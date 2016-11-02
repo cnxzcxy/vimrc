@@ -1,5 +1,7 @@
-"no vi compatible
+"No vi compatible
 set nocompatible
+
+autocmd BufWritePost * :silent :call SyncUploadFile()
 
 "set noimdisable
 "autocmd! InsertLeave * set imdisable|set iminsert=0
@@ -186,6 +188,7 @@ Bundle 'ervandew/supertab'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'spiiph/vim-space'
 Bundle 'yonchu/accelerated-smooth-scroll'
+Bundle 'eshion/vim-sync'
 "Bundle 'vim-scripts/qiushibaike'
 "Bundle 'vim-scripts/YankRing.vim'
 Plugin 'godlygeek/tabular'
