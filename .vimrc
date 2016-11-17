@@ -105,7 +105,7 @@ let g:Powerline_loaded = 1
 set statusline=
 set statusline+=%7*\[%n]                                  "buffernr
 set statusline+=%1*\ %<%F\                                "File+path
-set statusline+=%2*\ %{GitBranchInfoTokens()[0]}%#StatusLine# "Branch+name
+set statusline+=%2*\ %{GitBranchInfoTokens()[0]}\ %#StatusLine# "Branch+name
 "set statusline+=%2*\ %y\                                  "FileType
 set statusline+=%3*\ %{''.(&fenc!=''?&fenc:&enc).''}      "Encoding
 set statusline+=%3*\ %{(&bomb?\",BOM\":\"\")}\            "Encoding2
